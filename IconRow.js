@@ -48,7 +48,7 @@ const IconRow = () => {
         <MyButton iconName="logout" label="Log Out" onPress={() => navigation.navigate('Login')} />
       </View>
       <View style={{ flexDirection: 'row', marginTop: 50, width: '100%', justifyContent: 'space-evenly' }}>
-        <MyButton iconName="qrcode-scan" label="QR Code Scanner" onPress={() => console.log('pay was pressed')} />
+        <MyButton iconName="qrcode-scan" label="QR Code Scanner" onPress={() => navigation.navigate('Scanner')} />
       </View>
     </>
 

@@ -1,8 +1,9 @@
 //App.js
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { View, Text, Button, Pressable, StyleSheet } from 'react-native';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
 import HomeScreen from './HomeScreen'
+import CodeScanner from './CodeScanner';
 
 function LoginScreen({ navigation }) {
   return (
@@ -37,6 +38,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
         <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="Scanner" component={CodeScanner} />
       </Stack.Navigator>
     </NavigationContainer>
   );
