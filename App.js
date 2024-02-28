@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import HomeScreen from './HomeScreen'
 import CodeScanner from './CodeScanner';
+import ScannerScreen from './ScannerScreen';
 
 function LoginScreen({ navigation }) {
   return (
@@ -39,6 +40,7 @@ export default function App() {
         <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
         <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Scanner" component={CodeScanner} />
+        <Stack.Screen name="Scanner2" component={ScannerScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
